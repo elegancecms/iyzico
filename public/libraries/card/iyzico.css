@@ -1,0 +1,179 @@
+﻿.iyzico-card-checkout {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.iyzico-card-checkout .form-control {
+    transition: all 0.15s ease;
+    width: 100%;
+}
+.iyzico-card-checkout .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.iyzico-card-checkout .input-wrapper .form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: 4rem;
+}
+.input-wrapper .form-control.is-invalid ~ .card-brands,
+.input-wrapper .form-control.is-invalid ~ .cvc-icon {
+    right: 2.5rem;
+}
+.card-brands, .cvc-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;
+}
+.card-brands img {
+    height: 20px;
+    width: auto;
+}
+.cvc-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #697386;
+}
+.cvc-icon.error svg {
+    color: #dc3545;
+}
+.iyzico-card-checkout .invalid-feedback {
+    display: none!important;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.iyzico-card-checkout .form-group {
+    position: relative;
+}
+
+.form-control:focus{
+    background-color: unset;
+    box-shadow: unset;
+    color: unset;
+    outline: 0;
+}
+.installment-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 1rem;
+}
+
+.col-span-full {
+    grid-column: span 2;
+}
+
+.col-span-2 {
+    grid-column: span 1;
+}
+        .bank-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .bank-name {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .card-type {
+            color: #718096;
+            font-size: 0.875rem;
+        }
+
+        .single-payment {
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+
+        .single-payment .installment-card {
+            background-color: #f8fafc;
+            border-color: #4f46e5;
+        }
+
+
+        .installment-option {
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .installment-option input[type="radio"] {
+            display: none;
+        }
+
+        .installment-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .installment-option input[type="radio"]:checked + .installment-card {
+            border-color: #4f46e5;
+            background-color: #f8fafc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .installment-header {
+            margin-bottom: 0.75rem;
+        }
+
+        .installment-count {
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .installment-body {
+            text-align: center;
+        }
+
+        .total-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .monthly-payment {
+            font-size: 0.875rem;
+            color: #4a5568;
+            padding-top: 0.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .monthly-payment .amount {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .monthly-payment .label {
+            display: block;
+            color: #718096;
+            margin-top: 0.25rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+        }
+
+        @media (max-width: 640px) {
+            .installment-grid {
+                grid-template-columns: 1fr;
+            }
+        }

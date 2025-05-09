@@ -1,0 +1,10 @@
+{
+    "name": "elegancecms/iyzico",
+    "description": "Iyzico Payment Gateway",
+    "type": "package",
+    "require": {
+        "php": ">=7.3",
+        "illuminate/support": ">=8.0",
+        "iyzico/iyzipay-php": "^2.0"
+    }
+}

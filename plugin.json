@@ -1,0 +1,14 @@
+{
+    "id": "elegancecms/iyzico",
+    "name": "Iyzico Payment Gateway",
+    "namespace": "EleganceCMS\\Iyzico\\",
+    "provider": "EleganceCMS\\Iyzico\\Providers\\IyzicoServiceProvider",
+    "author": "EleganceCMS Technologies",
+    "url": "https://elegancecms.com",
+    "version": "1.0.0",
+    "description": "Iyzico payment gateway integration",
+    "minimum_core_version": "7.3.0",
+    "require": [
+        "elegancecms/payment"
+    ]
+}
